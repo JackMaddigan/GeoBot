@@ -1,0 +1,4 @@
+package-lock.json
+.env
+geobot.db
+node_modules
