@@ -15,7 +15,8 @@ const client = new Client({
 client.on("ready", async (bot) => {
   console.log(bot.user.username + " is online!");
   try {
-    await registerCommands(client);
+    await handleDailyChallenge(client);
+    // await registerCommands(client);
   } catch (error) {
     console.error(error);
   }
